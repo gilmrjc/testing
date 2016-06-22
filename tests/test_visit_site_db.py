@@ -36,8 +36,9 @@ def browser():
 
 
 @then('I see a window')
-def i_see_a_window(live_server, browser):
+def i_see_a_window(live_server, browser, settings):
     """I see a window."""
+    settings.DEBUG = True
     print('Then')
     print('Objects: ', Example.objects.all())
     browser.get(live_server.url + '/db/')
