@@ -1,0 +1,6 @@
+Features: Visit site
+
+Scenario: Visiting the site
+    Given I create objects
+    And I visit the site
+    Then I see a window
